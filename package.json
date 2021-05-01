@@ -1,24 +1,26 @@
 {
-  "name": "@johnpapa/card",
-  "version": "1.0.5",
-  "description": "A personal card for John Papa",
+  "name": "@3imed-jaberi/card",
+  "version": "1.0.0",
+  "description": "A personal card for Imed Jaberi",
   "main": "index.js",
   "bin": {
-    "johnpapa-card": "./bin/index.js"
+    "imedjaberi-card": "./bin/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/johnpapa/johnpapa-card.git"
+    "url": "https://github.com/3imed-jaberi/3imed-jaberi-card.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "keywords": [],
-  "author": "John Papa (http://johnpapa.net)",
+  "author": {
+    "name": "imed jaberi",
+    "email": "imed-jaberi@outlook.com",
+    "url": "https://www.3imed-jaberi.com"
+  },  
   "license": "MIT",
   "dependencies": {
-    "boxen": "^2.1.0",
-    "chalk": "^2.4.1"
+    "boxen": "^5.0.1",
+    "chalk": "^4.1.1"
   },
   "devDependencies": {
     "eslint": "^5.10.0",
