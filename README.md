@@ -3,6 +3,7 @@
 It's me, Imed!
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![npm version](https://badge.fury.io/js/%403imed-jaberi%2Fcard.svg)](https://www.npmjs.com/package/@3imed-jaberi/card)
 
 ## Usage
 
