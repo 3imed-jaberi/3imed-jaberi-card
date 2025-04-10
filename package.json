@@ -1,31 +1,50 @@
 {
-  "name": "@3imed-jaberi/card",
-  "version": "1.0.0",
-  "description": "A personal card for Imed Jaberi",
-  "main": "index.js",
-  "bin": {
-    "imedjaberi-card": "./bin/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/3imed-jaberi/3imed-jaberi-card.git"
-  },
-  "scripts": {},
-  "keywords": [],
-  "author": {
-    "name": "imed jaberi",
-    "email": "imed-jaberi@outlook.com",
-    "url": "https://www.3imed-jaberi.com"
-  },  
-  "license": "MIT",
-  "dependencies": {
-    "boxen": "^5.0.1",
-    "chalk": "^4.1.1"
-  },
-  "devDependencies": {
-    "eslint": "^5.10.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "standard": "^12.0.1"
-  }
+	"name": "@3imed-jaberi/card",
+	"version": "1.0.0",
+	"description": "A personal card for Imed Jaberi (@3imed-jaberi).",
+	"main": "index.js",
+	"bin": {
+		"imedjaberi": "./bin/card.mjs",
+		"imed-jaberi": "./bin/card.mjs",
+		"3imedjaberi": "./bin/card.mjs",
+		"3imed-jaberi": "./bin/card.mjs"
+	},
+	"files": ["bin/card.mjs", "bin/output"],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/3imed-jaberi/3imed-jaberi-card.git"
+	},
+	"homepage": "https://github.com/3imed-jaberi/3imed-jaberi-card",
+	"scripts": {
+		"prepublish": "npm run build",
+		"build": "node build.mjs",
+		"dev": "npm run build && node ./bin/card.mjs",
+		"format": "npx @biomejs/biome format --write",
+		"lint": "npx @biomejs/biome lint --write",
+		"check": "npx @biomejs/biome check --write"
+	},
+	"keywords": [
+		"card",
+		"npm",
+		"npm card",
+		"npx",
+		"npx card",
+		"business card",
+		"imed-jaberi"
+	],
+	"author": {
+		"name": "imed jaberi",
+		"email": "imed-jaberi@outlook.com",
+		"url": "https://www.imed-jaberi.com"
+	},
+	"license": "MIT",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"boxen": "^8.0.1",
+		"chalk": "^5.4.1"
+	},
+	"engines": {
+		"node": ">=12"
+	},
+	"bugs": "https://github.com/3imed-jaberi/3imed-jaberi-card/issues"
 }
